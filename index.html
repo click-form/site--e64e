@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кав’ярня «Солодка Подорож» | Головна</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md h-20 border-b border-stone-200/50">
+    <div class="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
+      <a
+ href="index.html" class="text-xl md:text-2xl font-extrabold text-stone-900 flex items-center gap-2">
+        <span class="text-amber-600">☕</span> Солодка Подорож
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-medium">
+        <a href="index.html" class="text-amber-600 font-semibold" data-i18n="nav_home">Головна</a>
+        <a href="about.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_about">Про нас</a>
+        <a href="services.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_menu">Меню</a>
+        <a href="gallery.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_gallery">Галерея</a>
+        <a href="booking.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_booking">Забронювати</a>
+        <a href="contacts.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_contacts">Контакти</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <!-- Lang Switcher -->
+        <div class="flex bg-stone-100 rounded-lg p-1 border border-stone-200">
+          <button onclick="setLang('uk')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">UA</button>
+          <button onclick="setLang('ru')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">RU</button>
+          <button onclick="setLang('en')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">EN</button>
+        </div>
+        <a href="booking.html" class="hidden sm:inline-block bg-amber-500 hover:bg-amber-600 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-amber-500/20 transition-all hover:scale-105" data-i18n="btn_book">Забронювати</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-[85vh] flex items-center justify-center bg-stone-900 bg-gradient-to-br from-[#6F4E37]/90 to-black/80 text-white px-6 text-center">
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+    <div class="relative z-10 max-w-4xl mx-auto space-y-8">
+      <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight" data-i18n="hero_title">Кав’ярня «Солодка Подорож»</h1>
+      <p class="text-lg md:text-2xl text-stone-200 font-light max-w-2xl mx-auto" data-i18n="hero_subtitle">Затишна кав'ярня у серці Борислава</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="services.html" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-amber-500/30 transition-all hover:scale-105" data-i18n="hero_btn">Переглянути меню</a>
+        <a href="contacts.html" class="w-full sm:w-auto border-2 border-white/80 hover:border-white text-white px-8 py-4 rounded-2xl font-bold backdrop-blur-sm hover:bg-white/10 transition-all" data-i18n="btn_call">Зателефонувати</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / Unique Facts -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl font-bold text-stone-900 mb-4">Чому обирають нас</h2>
+      <p class="text-stone-600">Особливості нашої кав'ярні для вашого найкращого відпочинку</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-3xl shadow-lg border border-stone-100 flex items-start gap-4">
+        <div class="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 font-bold text-xl shrink-0">📍</div>
+        <div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2">Центр міста Борислав</h3>
+          <p class="text-stone-600">Зручне розташування у самому серці міста, куди легко дістатися з будь-якої точки.</p>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow-lg border border-stone-100 flex items-start gap-4">
+        <div class="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 font-bold text-xl shrink-0">☕</div>
+        <div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2">Затишна атмосфера</h3>
+          <p class="text-stone-600">Ідеальне місце для душевних розмов з друзями, романтичних зустрічей або спокійного релаксу.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 py-12 px-6 border-t border-stone-800">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+          <span class="text-amber-500">☕</span> Солодка Подорож
+        </h3>
+        <p class="text-stone-400">Затишна кав'ярня у серці Борислава для вашого ідеального дня.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Швидка навігація</h4>
+        <ul class="space-y-2 text-stone-400">
+          <li><a href="index.html" class="hover:text-white transition">Головна</a></li>
+          <li><a href="about.html" class="hover:text-white transition">Про нас</a></li>
+          <li><a href="services.html" class="hover:text-white transition">Меню</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition">Контакти</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Контакти</h4>
+        <p class="text-stone-400 mb-2">м. Борислав, центр</p>
+        <a href="https://www.facebook.com/groups/typicalBoryslav/posts/2624841114630621/" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-xl text-sm font-semibold transition mt-2">Facebook група</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-stone-800 text-center text-stone-500 text-sm">
+      &copy; 2024 Кав’ярня «Солодка Подорож». Всі права захищені.
+    </div>
+  </footer>
+
+  <script>
+    const i18n = {
+      uk: {
+        "nav_home": "головна", "nav_about": "Про нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронювати", "nav_contacts": "Контакти",
+        "btn_call": "Зателефонувати", "btn_book": "Забронювати", "hero_btn": "Переглянути меню",
+        "hero_title": "Кав’ярня «Солодка Подорож»", "hero_subtitle": "Затишна кав'ярня у серці Борислава"
+      },
+      ru: {
+        "nav_home": "Главная", "nav_about": "О нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронировать", "nav_contacts": "Контакты",
+        "btn_call": "Позвонить", "btn_book": "Забронировать", "hero_btn": "Посмотреть меню",
+        "hero_title": "Кофейня «Сладкое Путешествие»", "hero_subtitle": "Уютная кофейня в сердце Борислава"
+      },
+      en: {
+        "nav_home": "Home", "nav_about": "About", "nav_menu": "Menu", "nav_gallery": "Gallery", "nav_booking": "Book", "nav_contacts": "Contacts",
+        "btn_call": "Call Us", "btn_book": "Book Now", "hero_btn": "View Menu",
+        "hero_title": "Coffee Shop «Sweet Journey»", "hero_subtitle": "Cozy cafe in the heart of Boryslav"
+      }
+    };
+    function setLang(lang) {
+      localStorage.setItem('site_lang', lang);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) el.innerText = i18n[lang][key];
+      });
+      document.documentElement.lang = lang;
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('site_lang') || 'uk';
+      setLang(savedLang);
+    });
+  </script>
+</body>
+</html>"},{"path":"about.html","content":"<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кав’ярня «Солодка Подорож» | Про нас</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md h-20 border-b border-stone-200/50">
+    <div class="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
+      <a href="index.html" class="text-xl md:text-2xl font-extrabold text-stone-900 flex items-center gap-2">
+        <span class="text-amber-600">☕</span> Солодка Подорож
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-medium">
+        <a href="index.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_home">головна</a>
+        <a href="about.html" class="text-amber-600 font-semibold" data-i18n="nav_about">Про нас</a>
+        <a href="services.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_menu">Меню</a>
+        <a href="gallery.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_gallery">Галерея</a>
+        <a href="booking.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_booking">Забронювати</a>
+        <a href="contacts.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_contacts">Контакти</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <div class="flex bg-stone-100 rounded-lg p-1 border border-stone-200">
+          <button onclick="setLang('uk')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">UA</button>
+          <button onclick="setLang('ru')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">RU</button>
+          <button onclick="setLang('en')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">EN</button>
+        </div>
+        <a href="booking.html" class="hidden sm:inline-block bg-amber-500 hover:bg-amber-600 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-amber-500/20 transition-all hover:scale-105" data-i18n="btn_book">Забронювати</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Content -->
+  <section class="py-20 px-6 max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-stone-900 mb-4" data-i18n="nav_about">Про нас</h1>
+      <div class="w-24 h-1.5 bg-amber-500 mx-auto rounded-full"></div>
+    </div>
+
+    <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-stone-100 space-y-6 text-lg text-stone-700 leading-relaxed">
+      <p>
+        Кав’ярня «Солодка Подорож» розташована в місті Борислав і є чудовим місцем для відпочинку за чашкою ароматної кави. Тут панує приємна атмосфера, яка ідеально підходить для зустрічей з друзями або спокійного відпочинку наодинці.
+      </p>
+      <p>
+        Заклад пропонує відвідувачам різноманітні кавові напої та смаколики. Кожна деталь створена для того, щоб подарувати гостям затишок і приємні емоції під час їхньої солодкої подорожі у світ смаку.
+      </p>
+      <p>
+        Завітайте до нас у центр Борислава, щоб насолодитися якісною кавою та приємною атмосферою.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 py-12 px-6 border-t border-stone-800">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+          <span class="text-amber-500">☕</span> Солодка Подорож
+        </h3>
+        <p class="text-stone-400">Затишна кав'ярня у серці Борислава для вашого ідеального дня.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Швидка навігація</h4>
+        <ul class="space-y-2 text-stone-400">
+          <li><a href="index.html" class="hover:text-white transition">Головна</a></li>
+          <li><a href="about.html" class="hover:text-white transition">Про нас</a></li>
+          <li><a href="services.html" class="hover:text-white transition">Меню</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition">Контакти</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Контакти</h4>
+        <p class="text-stone-400 mb-2">м. Борислав, центр</p>
+        <a href="https://www.facebook.com/groups/typicalBoryslav/posts/2624841114630621/" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-xl text-sm font-semibold transition mt-2">Facebook група</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-stone-800 text-center text-stone-500 text-sm">
+      &copy; 2024 Кав’ярня «Солодка Подорож». Всі права захищені.
+    </div>
+  </footer>
+
+  <script>
+    const i18n = {
+      uk: { "nav_home": "головна", "nav_about": "Про нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронювати", "nav_contacts": "Контакти", "btn_call": "Зателефонувати", "btn_book": "Забронювати", "hero_btn": "Переглянути меню" },
+      ru: { "nav_home": "Главная", "nav_about": "О нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронировать", "nav_contacts": "Контакты", "btn_call": "Позвонить", "btn_book": "Забронировать", "hero_btn": "Посмотреть меню" },
+      en: { "nav_home": "Home", "nav_about": "About", "nav_menu": "Menu", "nav_gallery": "Gallery", "nav_booking": "Book", "nav_contacts": "Contacts", "btn_call": "Call Us", "btn_book": "Book Now", "hero_btn": "View Menu" }
+    };
+    function setLang(lang) {
+      localStorage.setItem('site_lang', lang);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) el.innerText = i18n[lang][key];
+      });
+      document.documentElement.lang = lang;
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('site_lang') || 'uk';
+      setLang(savedLang);
+    });
+  </script>
+</body>
+</html>"},{"path":"services.html","content":"<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кав’ярня «Солодка Подорож» | Меню</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md h-20 border-b border-stone-200/50">
+    <div class="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
+      <a href="index.html" class="text-xl md:text-2xl font-extrabold text-stone-900 flex items-center gap-2">
+        <span class="text-amber-600">☕</span> Солодка Подорож
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-medium">
+        <a href="index.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_home">головна</a>
+        <a href="about.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_about">Про нас</a>
+        <a href="services.html" class="text-amber-600 font-semibold" data-i18n="nav_menu">Меню</a>
+        <a href="gallery.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_gallery">Галерея</a>
+        <a href="booking.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_booking">Забронювати</a>
+        <a href="contacts.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_contacts">Контакти</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <div class="flex bg-stone-100 rounded-lg p-1 border border-stone-200">
+          <button onclick="setLang('uk')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">UA</button>
+          <button onclick="setLang('ru')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">RU</button>
+          <button onclick="setLang('en')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">EN</button>
+        </div>
+        <a href="booking.html" class="hidden sm:inline-block bg-amber-500 hover:bg-amber-600 text-white px-5 py.5 rounded-xl font-semibold shadow-lg shadow-amber-500/20 transition-all hover:scale-105" data-i18n="btn_book">Забронювати</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-stone-900 mb-4" data-i18n="nav_menu">Меню</h1>
+      <p class="text-stone-600">Оберіть свій улюблений напій або десерт</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Item 1 -->
+      <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1 p-8 border border-stone-100 flex flex-col justify-between">
+        <div>
+          <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-6">☕</div>
+          <h3 class="text-2xl font-bold text-stone-900 mb-2">Еспресо / Американо</h3>
+          <p class="text-stone-600 mb-6">Класична ароматна кава зі свіжообсмажених зернових купажів.</p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-stone-100">
+          <span class="text-xl font-extrabold text-amber-600">45 грн</span>
+          <a href="booking.html" class="bg-stone-100 hover:bg-amber-500 hover:text-white text-stone-800 px-4 py-2 rounded-xl text-sm font-semibold transition">Замовити</a>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1 p-8 border border-stone-100 flex flex-col justify-between">
+        <div>
+          <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-6">🥛</div>
+          <h3 class="text-2xl font-bold text-stone-900 mb-2">Капучино / Лате</h3>
+          <p class="text-stone-600 mb-6">Ніжний еспресо з пишною молочною пінкою та шовковистою текстурою.</p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-stone-100">
+          <span class="text-xl font-extrabold text-amber-600">65 грн</span>
+          <a href="booking.html" class="bg-stone-100 hover:bg-amber-500 hover:text-white text-stone-800 px-4 py-2 rounded-xl text-sm font-semibold transition">Замовити</a>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1 p-8 border border-stone-100 flex flex-col justify-between">
+        <div>
+          <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-6">🍰</div>
+          <h3 class="text-2xl font-bold text-stone-900 mb-2">Фірмові десерти</h3>
+          <p class="text-stone-600 mb-6">Свіжі тістечка та солодощі для ідеального доповнення до вашої кави.</p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-stone-100">
+          <span class="text-xl font-extrabold text-amber-600">85 грн</span>
+          <a href="booking.html" class="bg-stone-100 hover:bg-amber-500 hover:text-white text-stone-800 px-4 py-2 rounded-xl text-sm font-semibold transition">Замовити</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 py-12 px-6 border-t border-stone-800">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+          <span class="text-amber-500">☕</span> Солодка Подорож
+        </h3>
+        <p class="text-stone-400">Затишна кав'ярня у серці Борислава для вашого ідеального дня.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Швидка навігація</h4>
+        <ul class="space-y-2 text-stone-400">
+          <li><a href="index.html" class="hover:text-white transition">Головна</a></li>
+          <li><a href="about.html" class="hover:text-white transition">Про нас</a></li>
+          <li><a href="services.html" class="hover:text-white transition">Меню</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition">Контакти</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Контакти</h4>
+        <p class="text-stone-400 mb-2">м. Борислав, центр</p>
+        <a href="https://www.facebook.com/groups/typicalBoryslav/posts/2624841114630621/" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-xl text-sm font-semibold transition mt-2">Facebook група</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-stone-800 text-center text-stone-500 text-sm">
+      &copy; 2024 Кав’ярня «Солодка Подорож». Всі права захищені.
+    </div>
+  </footer>
+
+  <script>
+    const i18n = {
+      uk: { "nav_home": "головна", "nav_about": "Про нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронювати", "nav_contacts": "Контакти", "btn_call": "Зателефонувати", "btn_book": "Забронювати", "hero_btn": "Переглянути меню" },
+      ru: { "nav_home": "Главная", "nav_about": "О нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронировать", "nav_contacts": "Контакты", "btn_call": "Позвонить", "btn_book": "Забронировать", "hero_btn": "Посмотреть меню" },
+      en: { "nav_home": "Home", "nav_about": "About", "nav_menu": "Menu", "nav_gallery": "Gallery", "nav_booking": "Book", "nav_contacts": "Contacts", "btn_call": "Call Us", "btn_book": "Book Now", "hero_btn": "View Menu" }
+    };
+    function setLang(lang) {
+      localStorage.setItem('site_lang', lang);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) el.innerText = i18n[lang][key];
+      });
+      document.documentElement.lang = lang;
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('site_lang') || 'uk';
+      setLang(savedLang);
+    });
+  </script>
+</body>
+</html>"},{"path":"gallery.html","content":"<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кав’ярня «Солодка Подорож» | Галерея</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md h-20 border-b border-stone-200/50">
+    <div class="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
+      <a href="index.html" class="text-xl md:text-2xl font-extrabold text-stone-900 flex items-center gap-2">
+        <span class="text-amber-600">☕</span> Солодка Подорож
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-medium">
+        <a href="index.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_home">головна</a>
+        <a href="about.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_about">Про нас</a>
+        <a href="services.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_menu">Меню</a>
+        <a href="gallery.html" class="text-amber-600 font-semibold" data-i18n="nav_gallery">Галерея</a>
+        <a href="booking.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_booking">Забронювати</a>
+        <a href="contacts.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_contacts">Контакти</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <div class="flex bg-stone-100 rounded-lg p-1 border border-stone-200">
+          <button onclick="setLang('uk')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">UA</button>
+          <button onclick="setLang('ru')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">RU</button>
+          <button onclick="setLang('en')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">EN</button>
+        </div>
+        <a href="booking.html" class="hidden sm:inline-block bg-amber-500 hover:bg-amber-600 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-amber-500/20 transition-all hover:scale-105" data-i18n="btn_book">Забронювати</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-stone-900 mb-4" data-i18n="nav_gallery">Галерея</h1>
+      <p class="text-stone-600">Атмосфера нашої затишної кав'ярні</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="aspect-square rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-[#6F4E37] to-amber-800 flex items-center justify-center text-white text-3xl font-bold p-6 text-center">
+        ☕ Затишок у кожній чашці
+      </div>
+      <div class="aspect-square rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-amber-600 to-stone-900 flex items-center justify-center text-white text-3xl font-bold p-6 text-center">
+        ✨ Приємна атмосфера
+      </div>
+      <div class="aspect-square rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-stone-800 to-[#6F4E37] flex items-center justify-center text-white text-3xl font-bold p-6 text-center">
+        🍰 Найсмачніші десерти
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 py-12 px-6 border-t border-stone-800">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+          <span class="text-amber-500">☕</span> Солодка Подорож
+        </h3>
+        <p class="text-stone-400">Затишна кав'ярня у серці Борислава для вашого ідеального дня.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Швидка навігація</h4>
+        <ul class="space-y-2 text-stone-400">
+          <li><a href="index.html" class="hover:text-white transition">Головна</a></li>
+          <li><a href="about.html" class="hover:text-white transition">Про нас</a></li>
+          <li><a href="services.html" class="hover:text-white transition">Меню</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition">Контакти</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Контакти</h4>
+        <p class="text-stone-400 mb-2">м. Борислав, центр</p>
+        <a href="https://www.facebook.com/groups/typicalBoryslav/posts/2624841114630621/" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-xl text-sm font-semibold transition mt-2">Facebook група</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-stone-800 text-center text-stone-500 text-sm">
+      &copy; 2024 Кав’ярня «Солодка Подорож». Всі права захищені.
+    </div>
+  </footer>
+
+  <script>
+    const i18n = {
+      uk: { "nav_home": "головна", "nav_about": "Про нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронювати", "nav_contacts": "Контакти", "btn_call": "Зателефонувати", "btn_book": "Забронювати", "hero_btn": "Переглянути меню" },
+      ru: { "nav_home": "Главная", "nav_about": "О нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронировать", "nav_contacts": "Контакты", "btn_call": "Позвонить", "btn_book": "Забронировать", "hero_btn": "Посмотреть меню" },
+      en: { "nav_home": "Home", "nav_about": "About", "nav_menu": "Menu", "nav_gallery": "Gallery", "nav_booking": "Book", "nav_contacts": "Contacts", "btn_call": "Call Us", "btn_book": "Book Now", "hero_btn": "View Menu" }
+    };
+    function setLang(lang) {
+      localStorage.setItem('site_lang', lang);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) el.innerText = i18n[lang][key];
+      });
+      document.documentElement.lang = lang;
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('site_lang') || 'uk';
+      setLang(savedLang);
+    });
+  </script>
+</body>
+</html>"},{"path":"booking.html","content":"<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кав’ярня «Солодка Подорож» | Забронювати</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md h-20 border-b border-stone-200/50">
+    <div class="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
+      <a href="index.html" class="text-xl md:text-2xl font-extrabold text-stone-900 flex items-center gap-2">
+        <span class="text-amber-600">☕</span> Солодка Подорож
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-medium">
+        <a href="index.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_home">головна</a>
+        <a href="about.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_about">Про нас</a>
+        <a href="services.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_menu">Меню</a>
+        <a href="gallery.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_gallery">Галерея</a>
+        <a href="booking.html" class="text-amber-600 font-semibold" data-i18n="nav_booking">Забронювати</a>
+        <a href="contacts.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_contacts">Контакти</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <div class="flex bg-stone-100 rounded-lg p-1 border border-stone-200">
+          <button onclick="setLang('uk')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">UA</button>
+          <button onclick="setLang('ru')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">RU</button>
+          <button onclick="setLang('en')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">EN</button>
+        </div>
+        <a href="booking.html" class="hidden sm:inline-block bg-amber-500 hover:bg-amber-600 text-white px-5 py.5 rounded-xl font-semibold shadow-lg shadow-amber-500/20 transition-all hover:scale-105" data-i18n="btn_book">Забронювати</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Booking Form Section -->
+  <section class="py-20 px-6 max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-stone-900 mb-4" data-i18n="nav_booking">Забронювати столик</h1>
+      <p class="text-stone-600">Заповніть форму, і ми зв'яжемося з вами для підтвердження</p>
+    </div>
+
+    <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-stone-100">
+      <form action="https://formsubmit.co/hello@example.com" method="POST" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm font-bold text-stone-700 mb-2">Ваше ім'я</label>
+            <input type="text" name="name" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-2xl focus:border-amber-500 focus:outline-none transition">
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-stone-700 mb-2">Номер телефону</label>
+            <input type="tel" name="phone" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-2xl focus:border-amber-500 focus:outline-none transition">
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm font-bold text-stone-700 mb-2">Дата</label>
+            <input type="date" name="date" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-2xl focus:border-amber-500 focus:outline-none transition">
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-stone-700 mb-2">Кількість гостей</label>
+            <input type="number" name="guests" min="1" max="20" value="2" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-2xl focus:border-amber-500 focus:outline-none transition">
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-stone-700 mb-2">Повідомлення або побажання</label>
+          <textarea name="message" rows="4" class="w-full px-5 py-4 border-2 border-stone-200 rounded-2xl focus:border-amber-500 focus:outline-none transition"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 rounded-2xl shadow-xl shadow-amber-500/30 transition-all hover:scale-[1.01]" data-i18n="btn_book">Забронювати</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 py-12 px-6 border-t border-stone-800">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+          <span class="text-amber-500">☕</span> Солодка Подорож
+        </h3>
+        <p class="text-stone-400">Затишна кав'ярня у серці Борислава для вашого ідеального дня.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Швидка навігація</h4>
+        <ul class="space-y-2 text-stone-400">
+          <li><a href="index.html" class="hover:text-white transition">Головна</a></li>
+          <li><a href="about.html" class="hover:text-white transition">Про нас</a></li>
+          <li><a href="services.html" class="hover:text-white transition">Меню</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition">Контакти</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Контакти</h4>
+        <p class="text-stone-400 mb-2">м. Борислав, центр</p>
+        <a href="https://www.facebook.com/groups/typicalBoryslav/posts/2624841114630621/" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-xl text-sm font-semibold transition mt-2">Facebook група</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-stone-800 text-center text-stone-500 text-sm">
+      &copy; 2024 Кав’ярня «Солодка Подорож». Всі права захищені.
+    </div>
+  </footer>
+
+  <script>
+    const i18n = {
+      uk: { "nav_home": "головна", "nav_about": "Про нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронювати", "nav_contacts": "Контакти", "btn_call": "Зателефонувати", "btn_book": "Забронювати", "hero_btn": "Переглянути меню" },
+      ru: { "nav_home": "Главная", "nav_about": "О нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронировать", "nav_contacts": "Контакты", "btn_call": "Позвонить", "btn_book": "Забронировать", "hero_btn": "Посмотреть меню" },
+      en: { "nav_home": "Home", "nav_about": "About", "nav_menu": "Menu", "nav_gallery": "Gallery", "nav_booking": "Book", "nav_contacts": "Contacts", "btn_call": "Call Us", "btn_book": "Book Now", "hero_btn": "View Menu" }
+    };
+    function setLang(lang) {
+      localStorage.setItem('site_lang', lang);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) el.innerText = i18n[lang][key];
+      });
+      document.documentElement.lang = lang;
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('site_lang') || 'uk';
+      setLang(savedLang);
+    });
+  </script>
+</body>
+</html>"},{"path":"contacts.html","content":"<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кав’ярня «Солодка Подорож» | Контакти</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md h-20 border-b border-stone-200/50">
+    <div class="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
+      <a href="index.html" class="text-xl md:text-2xl font-extrabold text-stone-900 flex items-center gap-2">
+        <span class="text-amber-600">☕</span> Солодка Подорож
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-medium">
+        <a href="index.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_home">головна</a>
+        <a href="about.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_about">Про нас</a>
+        <a href="services.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_menu">Меню</a>
+        <a href="gallery.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_gallery">Галерея</a>
+        <a href="booking.html" class="text-stone-600 hover:text-amber-600 transition" data-i18n="nav_booking">Забронювати</a>
+        <a href="contacts.html" class="text-amber-600 font-semibold" data-i18n="nav_contacts">Контакти</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <div class="flex bg-stone-100 rounded-lg p-1 border border-stone-200">
+          <button onclick="setLang('uk')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">UA</button>
+          <button onclick="setLang('ru')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">RU</button>
+          <button onclick="setLang('en')" class="px-2 py-1 text-xs font-bold rounded hover:bg-white text-stone-700 transition">EN</button>
+        </div>
+        <a href="booking.html" class="hidden sm:inline-block bg-amber-500 hover:bg-amber-600 text-white px-5 py.5 rounded-xl font-semibold shadow-lg shadow-amber-500/20 transition-all hover:scale-105" data-i18n="btn_book">Забронювати</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contacts Section -->
+  <section class="py-20 px-6 max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-stone-900 mb-4" data-i18n="nav_contacts">Контакти</h1>
+      <p class="text-stone-600">Завітайте до нас у гості або зв'язківся через соцмережі</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-3xl shadow-xl p-8 border border-stone-100 space-y-6">
+        <h3 class="text-2xl font-bold text-stone-900">Наша адреса</h3>
+        <div class="flex items-start gap-4 text-stone-600">
+          <span class="text-2xl">📍</span>
+          <p>м. Борислав, центр<br>Україна</p>
+        </div>
+        <div class="pt-4 border-t border-stone-100">
+          <h4 class="font-bold text-stone-900 mb-3">Соціальні мережі</h4>
+          <a href="https://www.facebook.com/groups/typicalBoryslav/posts/2624841114630621/" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition shadow-lg shadow-blue-600/20">Facebook група</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-8 border border-stone-100 flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold text-stone-900 mb-6">Години роботи</h3>
+          <ul class="space-y-4 text-stone-600">
+            <li class="flex justify-between border-b border-stone-100 pb-2">
+              <span class="font-semibold">Пн - Пт:</span>
+              <span>08:00 - 21:00</span>
+            </li>
+            <li class="flex justify-between border-b border-stone-100 pb-2">
+              <span class="font-semibold">Сб - Нд:</span>
+              <span>09:00 - 22:00</span>
+            </li>
+          </ul>
+        </div>
+        <div class="pt-8">
+          <a href="booking.html" class="w-full block text-center bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 rounded-2xl shadow-xl shadow-amber-500/30 transition" data-i18n="btn_book">Забронювати столик</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 py-12 px-6 border-t border-stone-800">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+          <span class="text-amber-500">☕</span> Солодка Подорож
+        </h3>
+        <p class="text-stone-400">Затишна кав'ярня у серці Борислава для вашого ідеального дня.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Швидка навігація</h4>
+        <ul class="space-y-2 text-stone-400">
+          <li><a href="index.html" class="hover:text-white transition">Головна</a></li>
+          <li><a href="about.html" class="hover:text-white transition">Про нас</a></li>
+          <li><a href="services.html" class="hover:text-white transition">Меню</a></li>
+          <li><a href="contacts.html" class="hover:text-white transition">Контакти</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Контакти</h4>
+        <p class="text-stone-400 mb-2">м. Борислав, центр</p>
+        <a href="https://www.facebook.com/groups/typicalBoryslav/posts/2624841114630621/" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-xl text-sm font-semibold transition mt-2">Facebook група</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-stone-800 text-center text-stone-500 text-sm">
+      &copy; 2024 Кав’ярня «Солодка Подорож». Всі права захищені.
+    </div>
+  </footer>
+
+  <script>
+    const i18n = {
+      uk: { "nav_home": "головна", "nav_about": "Про нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронювати", "nav_contacts": "Контакти", "btn_call": "Зателефонувати", "btn_book": "Забронювати", "hero_btn": "Переглянути меню" },
+      ru: { "nav_home": "Главная", "nav_about": "О нас", "nav_menu": "Меню", "nav_gallery": "Галерея", "nav_booking": "Забронировать", "nav_contacts": "Контакты", "btn_call": "Позвонить", "btn_book": "Забронировать", "hero_btn": "Посмотреть меню" },
+      en: { "nav_home": "Home", "nav_about": "About", "nav_menu": "Menu", "nav_gallery": "Gallery", "nav_booking": "Book", "nav_contacts": "Contacts", "btn_call": "Call Us", "btn_book": "Book Now", "hero_btn": "View Menu" }
+    };
+    function setLang(lang) {
+      localStorage.setItem('site_lang', lang);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) el.innerText = i18n[lang][key];
+      });
+      document.documentElement.lang = lang;
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('site_lang') || 'uk';
+      setLang(savedLang);
+    });
+  </script>
+</body>
+</html>
